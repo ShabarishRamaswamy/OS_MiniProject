@@ -2,7 +2,7 @@ const path = require('path')
 const express = require('express')
 const hbs= require('hbs')
 const app = express()
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 5575
 const haiku = require(__dirname+'/utils/haiku')
 
 //Setting View Engines 
@@ -28,5 +28,5 @@ app.get('/generate', (req, res)=>{
 
 
 app.listen(port, ()=>{
-    console.log('Listening to Port 4000')
+    console.log('Listening to Port ' + port)
 })
